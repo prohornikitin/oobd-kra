@@ -1,5 +1,7 @@
 \usepackage{tabularx}
 
+\usepackage{placeins}
+
 \usepackage{polyglossia}
 \setmainlanguage[numerals=cyrillic]{russian}
 \setotherlanguages{english}
@@ -157,8 +159,6 @@
 \newcommand*{\theauthorgroup}{\@authorgroup}
 \newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}}
 \newcommand*{\thesupervisor}{\@supervisor}
-\newcommand*{\consultant}[1]{\gdef\@consultant{#1}}
-\newcommand*{\theconsultant}{\@consultant}
 \newcommand{\projecttasks}[1]{\gdef\@projecttasks{#1}}
 \newcommand{\theprojecttasks}{\@projecttasks}
 \newcommand{\projecttask}[5]{#1 & #2 & #3 & #4 & #5 \\\hline}
@@ -174,16 +174,12 @@
 \newcommand*{\theauthorrspzapproval}{\@authorrspzapproval}
 \newcommand*{\supervisorrspzapproval}[1]{\gdef\@supervisorrspzapproval{#1}}
 \newcommand*{\thesupervisorrspzapproval}{\@supervisorrspzapproval}
-\newcommand*{\consultantrspzapproval}[1]{\gdef\@consultantrspzapproval{#1}}
-\newcommand*{\theconsultantrspzapproval}{\@consultantrspzapproval}
 \newcommand*{\supervisorrspzgrade}[1]{\gdef\@supervisorrspzgrade{#1}}
 \newcommand*{\thesupervisorrspzgrade}{\@supervisorrspzgrade}
 \newcommand*{\authorpzapproval}[1]{\gdef\@authorpzapproval{#1}}
 \newcommand*{\theauthorpzapproval}{\@authorpzapproval}
 \newcommand*{\supervisorpzapproval}[1]{\gdef\@supervisorpzapproval{#1}}
 \newcommand*{\thesupervisorpzapproval}{\@supervisorpzapproval}
-\newcommand*{\consultantpzapproval}[1]{\gdef\@consultantpzapproval{#1}}
-\newcommand*{\theconsultantpzapproval}{\@consultantpzapproval}
 \newcommand*{\supervisorpzgrade}[1]{\gdef\@supervisorpzgrade{#1}}
 \newcommand*{\thesupervisorpzgrade}{\@supervisorpzgrade}
 \makeatother
